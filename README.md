@@ -1,0 +1,2 @@
+It's a two-player dice game where each player takes turns rolling a die to build up their score. On each roll, if the player gets any number except a 1, they can choose to hold and add it to their score. But, if they roll a 1, they lose that turn's score, and the game passes to the other player. The first player to reach a total of 100 points wins! While the game runs smoothly on laptop screens, it’s still awaiting a responsive touch for all devices.
+Have a nice game!!!!
