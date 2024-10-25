@@ -17,6 +17,7 @@ const switchEl = function () {
   player0.classList.toggle("player--active");
   player1.classList.toggle("player--active");
 };
+let reset = true;
 let scores = [0, 0];
 let activePlayer = 0;
 let currentScore = 0;
@@ -42,7 +43,7 @@ btnHold.addEventListener("click", function () {
     scores[activePlayer] += currentScore;
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
       playing = false;
       document
         .querySelector(`.player--${activePlayer}`)
@@ -55,4 +56,18 @@ btnHold.addEventListener("click", function () {
       switchEl();
     }
   }
+});
+btnNew.addEventListener("click", function () {
+  scores[(0, 0)];
+  activePlayer = 0;
+  currentScore = 0;
+  playing = true;
+  score0.textContent = 0;
+  score1.textContent = 0;
+  current0.textContent = 0;
+  current1.textContent = 0;
+  player0.classList.remove("player--winner");
+  player1.classList.remove("player--winner");
+  player0.classList.add("player--active");
+  player1.classList.remove("player--active");
 });
